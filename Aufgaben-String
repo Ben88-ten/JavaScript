@@ -1,0 +1,41 @@
+"use strict"
+
+let shopping = "   ,Apfel, Pfirsich, +++Avocado, Mango   "
+
+// Aufgabe 1: Entferne die Leerzeichen links und rechts, und schreibe 
+// das Ergebnis zurück in die Variabele "shopping"
+
+shopping = shopping.trim();
+
+
+
+
+// Aufgabe 2: Finde die Position der drei Plus-Zeichen, und speiche dies in einer Variable
+
+let pos = shopping.indexOf("+++");
+console.log(pos);
+
+// Aufgabe 3: Schneide die 3 Plus Zeichen aus 
+
+console.log(shopping.substr(0,pos) + shopping.substr(pos +3));
+
+console.log(shopping.slice(0, pos) + shopping.slice(pos + 3));
+
+
+// Aufgabe 4: Schenide die 4 Plus-Zeichen aus und verwende die .replace() Funktion
+
+console.log(shopping.replace("+++", ""));
+// Einkaufsliste ausgeben 
+
+shopping = shopping.replace("+++", "");
+
+console.log("-".repeat(20));
+
+console.log(shopping);
+
+console.log("Einkaufsliste:") ;
+console.log(shopping.replace(",", "\n - ")
+.replace(", ", "\n - ")
+.replace(", ", "\n - ")
+.replace(", ", "\n - ") );
+
