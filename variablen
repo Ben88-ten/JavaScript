@@ -1,0 +1,16 @@
+"use srict"
+
+let str = "Hallo Welt"; 
+
+console.log(" Variable in let variaiert " + let);
+
+const greeting = "Hallo Welt"; 
+console.log("Variabel mit const variriet" + greeting);
+
+console.log("const ist nicht mehr erlaubt,..... deshalb sollte man alle variablen mit let ausführen ")
+
+
+/** Komentare können so geschrieben werden das dies einfacher ist 
+ * und es damit möglich ist ein kommentar über mehrere Zeilen zu 
+ * schreiben ohen diese mit // zu unterteilen 
+ */
