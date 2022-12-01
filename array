@@ -1,0 +1,41 @@
+"use strict"
+
+let students = [
+    "Max Müller",
+    "Erka Mustermann",
+    "Annika Müller",
+    "Max Mustermann"
+]
+
+console.log(students); 
+
+// Der Typ von einem Array
+
+console.log(typeof students);
+console.log(students instanceof Array);
+
+// Wieviele Elemente sind in dem Array Students
+
+console.log("length", students.length);
+
+// auf ein einzelnes Element zugreifen
+
+console.log("[1]",students[1]);
+
+// Element hinzufügen 
+
+students.push("Hans Matrix");
+console.log(students);
+
+
+//  letztes Element  entfernen 
+
+const lastElement  = students.pop()
+
+console.log(students)
+
+console.log(lastElement)
+
+// Ein element überschreiben 
+students[2] = "Maximilian HAAS"
+console.log(students)
