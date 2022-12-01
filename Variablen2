@@ -1,0 +1,14 @@
+"use strict" // Wichite anwendung um Fehler zu vermeinden 
+
+let greeting3 = "Hallo Welt";
+
+// Variable definiert 
+
+
+
+
+greeting3 = "Hallo Mond";
+
+// Wert der Variable wurde überschrieben 
+
+console.log(greeting3);
