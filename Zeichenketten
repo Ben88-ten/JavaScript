@@ -1,0 +1,40 @@
+"use strict"
+
+let greeting = "---- Hallo Welt!-----";
+
+// Die Anzahl der Zeichen in einem String 
+console.log(greeting.length);
+
+// Ein einzeles Zeichen abfragen 
+console.log(greeting.charAt(5)); // H
+console.log(greeting[5]) // kurze schreibweise 
+
+// Wo befindet sich ein Zeichen in einem String 
+console.log(greeting.indexOf("o")+ " Position "); // position 9
+
+
+// Großbuchstaben bzw. Kleinbuchstaben
+console.log(greeting.toUpperCase());
+console.log(greeting.toLowerCase());
+
+// Text ersetzten 
+console.log(greeting.replace("!", "!!!"));
+
+// anzeigen der Positionen 
+
+
+console.log(greeting.trim().length);
+
+
+// New line 
+console.log("Hallo\nWelt");
+
+// Sting widerholen 
+console.log("-".repeat(10));
+
+// .slice(Start, end )
+
+console.log("Hallo Welt".slice( 4, 8 ));
+
+// .substr(start, length)
+console.log("Hallo Welt".substr(6, 2));
