@@ -1,0 +1,46 @@
+// Aufgabe 1: 
+
+// der Betrag von 15,37 EUR soll zurückgegeben werden 
+
+// Wandle den Betrag 15,37 in 15.37 um 
+let betrag = "15,37";
+
+let Umgewandelterbetrag = betrag.replace(",", ".");
+console.log("Der Umgewandelte betrag ist: " +  Umgewandelterbetrag + "EURO");
+
+// in cent umgwanden
+
+console.log("Betrag in Cent: " + Umgewandelterbetrag * 100)
+
+let betragincent = (Umgewandelterbetrag * 100);
+
+// " Euro Münzen
+
+let zweiE = (Math.floor(betragincent / 200));
+console.log("- " + zweiE + "  2Euro Münzen");
+
+let zincent = zweiE * 200
+let rest1 = betragincent - zincent
+
+let eine = (Math.floor(rest1 / 100)) 
+console.log("- " + eine + " 1Euro Münzen ")
+
+let eineincent = eine *100
+
+let rest2 = betragincent - zincent - eineincent
+
+let zcent = (Math.floor(rest2 / 10))
+
+console.log("- " + zcent + " 10cent Münzen" )
+
+let zeincent = zcent * 10
+
+let rest3 = betragincent - zincent - eineincent - zeincent
+
+console.log("- "+ rest3 + " 1cent Münzen")
+
+
+
+
+
+
