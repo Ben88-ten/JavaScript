@@ -1,0 +1,35 @@
+
+"use strict"
+
+// Tag im Monat
+let dayOfMonth = (new Date()).getDate();
+
+
+// Der Name des aktellen Monats
+let monthName = (new Date()).toLocaleString(["de", "en"], {month: "long"}); 
+
+
+let year1 = (new Date()).getFullYear();
+
+
+let year2 = (new Date()).toLocaleString(["de","en"], {year: "numeric"});
+
+
+console.log("Aufgabe 1");
+
+console.log("typ der Variable dayofMonth = " + typeof dayOfMonth);
+console.log("typ der Variable monthName = " + typeof monthName);
+console.log("typ der Variable year1 = " +typeof year1);
+console.log("typ der Variable year2 = " +typeof year2);
+
+
+console.log("Aufgabe 2");
+
+
+
+console.log( year1 + 5 + " Hier ist die Variable year ein number") ;
+console.log(" Year + 5   = " +  year2 + 5 + (" hier ist die Variable year ein Sting") );
+
+
+
+console.log("Heute ist der  " + dayOfMonth + " "+ monthName + " " + year1);
