@@ -1,0 +1,19 @@
+" use strict"
+
+// Sting 
+let a = "String = Hallo Welt!"; 
+console.log(typeof a); // typenbezeichung 
+console.log(a); 
+
+// Zahl 
+console.log("Zahl: ")
+let b = 45;
+let c = 43.4 
+console.log("Zahl = " + b + " " + c); 
+
+
+// Boolean (true / false)
+let d = true; 
+console.log(c);
+
+
